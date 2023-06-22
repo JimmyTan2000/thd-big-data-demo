@@ -1,4 +1,5 @@
 # For demo_bayesian_optimization.py
-scikit-learn
-tensorflow
-keras-tuner
+scikit-learn==1.2.2
+tensorflow==2.12.0
+keras-tuner==1.3.5
+
