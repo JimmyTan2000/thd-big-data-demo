@@ -1,4 +1,4 @@
-# pylint: disable=E1101
+# pylint: disable=E1101, C0116, C0114, C0103
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from tensorflow import keras
