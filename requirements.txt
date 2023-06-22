@@ -1,0 +1,4 @@
+# For demo_bayesian_optimization.py
+scikit-learn
+tensorflow
+keras-tuner
