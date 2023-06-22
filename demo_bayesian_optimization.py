@@ -1,4 +1,4 @@
-# pylint: disable=E1101, C0116, C0114, C0103
+# pylint: disable=E1101, C0114, C0103
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 from tensorflow import keras
@@ -19,6 +19,13 @@ x_train, x_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_st
 
 
 def build_model(hp):
+    """
+    Build a keras model for hyperparameter optimization.
+
+    :param hp: HyperParameters class instance. Hyperparameters to build the model.
+
+    :return: A compiled keras model.
+    """
     model = keras.Sequential(
         [
             keras.layers.Dense(
