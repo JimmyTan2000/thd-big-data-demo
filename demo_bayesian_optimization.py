@@ -54,3 +54,5 @@ tuner.search(x_train, y_train, epochs=5, validation_data=(x_val, y_val))
 best_hyperparameters = tuner.get_best_hyperparameters()[0]
 
 best_model = tuner.hypermodel.build(best_hyperparameters)
+
+print(best_hyperparameters.get_config())
